@@ -66,5 +66,7 @@ app.put('/lions/:id', function(req, res) {
   }
 });
 
-app.listen(3000);
-console.log('on port 3000');
+var port= 3000;
+app.listen(port, function(){
+    console.log('listening on http://localhost:', port);
+})
